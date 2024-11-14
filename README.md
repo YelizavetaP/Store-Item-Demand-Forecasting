@@ -17,7 +17,8 @@ To solve the problem, the following methodology and tools were employed:
 
 - **Feature Engineering**: Additional features such as hour, day of the week, quarter, year, and sine/cosine transformations of the day of the year were created to capture seasonal patterns.
 - **Machine Learning Models**: Several models were tested, including `Naive model`, `XGBModel`, `ExponentialSmoothing`, `ARIMA`, `AutoARIMA`, `Prophet` and `RNN` model to find the best-performing model for demand forecasting.
-- **Tools and Libraries**: The project utilized Python with libraries such as `Pandas` for data manipulation, `NumPy` for numerical operations, `Scikit-learn` for implementing ML algorithms, `Darts` for time series handling, and `Matplotlib/Seaborn` for data visualization.
+`Backtesting` was conducted to evaluate the performance of thrthe best model by comparing predictions against actual historical sales data.
+- **Tools and Libraries**: The project utilized Python with libraries such as `Pandas` for data manipulation, `NumPy` for numerical operations, `Scikit-learn` and `statsmodels` for implementing ML algorithms, `Darts` for time series handling, and `Matplotlib/Seaborn` for data visualization.
 
 ## 4. Obtained Results and Conclusions
 The analysis revealed that the demand forecasting model achieved a high level of accuracy with `MAPE score 20.9%` on `Prophet` model. The model effectively captured the seasonal trends and patterns in the sales data, allowing for reliable demand predictions.
